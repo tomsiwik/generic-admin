@@ -26,7 +26,7 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 # Move the example configuration file into a backup folder
 RUN mkdir /directus
-RUN mv /usr/share/nginx/html/config.js /directus/config.js
+RUN mv /usr/share/nginx/html/config_example.js /directus/config.js
 
 # Copy entrypoint
 COPY entrypoint.sh /root/entrypoint.sh
